@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lamp</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section class="hero">
+        <nav>
+            <img src="./images/menu.png" alt="Menu" class="menu-img">
+            <img src="./images/logo.png" alt="Vue Lamp" class="logo-img">
+            <ul>
+                <li><a href="#" aria-label="Latest">Latest</a></li>
+                <li><a href="#" aria-label="Modern">Modern</a></li>
+                <li><a href="#" aria-label="Contemporary">Contemporary</a></li>
+                <li><a href="#" aria-label="Affordable">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn">
+                <span>
+                    
+                </span>
+            </button>
+        </nav>
+
+        <section class="lamp-container">
+            <img src="./images/lamp.png" class="lamp" alt="lamp">
+            <img src="./images/light.png" class="light" alt="light">
+        </section>
+
+        <section class="text-container">
+            <h1>Latest<br>in Lighting</h1>
+            <p>This is the first lamp from our company. We're making a huge
+                collection of modern Lamps in all categories from home use to
+                office use.
+            </p>
+            <a href="#" aria-label="Check Collections">Check All Collections</a>
+
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span aria-label="Controlls"></span></div>
+                <p>05</p>
+            </div>
+        </section>
+    </section>
+
+    <script>
+        var btn = document.querySelector('#btn');
+        var light = document.querySelector('.light');
+
+        function toggleBtn() {
+            btn.classList.toggle('active');
+            light.classList.toggle('on');
+        }
+    </script>
+</body>
+</html>
